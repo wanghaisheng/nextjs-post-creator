@@ -1,0 +1,13 @@
+main = ".open-next/worker.js"
+name = "my-app"
+ 
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+ 
+# The binding name must be "ASSETS" when the cache is enabled
+assets = { directory = ".open-next/assets", binding = "ASSETS" }
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "cf-workers-test-db"
+database_id = "31b84928-7edf-46cb-9e28-214d7ae6dfd8"
